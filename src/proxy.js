@@ -1,7 +1,9 @@
 // src/proxy.js
+const url = 'https://gym-api-e687cd3d06dc.hosted.ghaymah.systems';
+
 export const generatePortalLink = async (email) => {
     try {
-        const res = await fetch(`${process.env.REACT_APP_API_URL}/api/portal_link`, {
+        const res = await fetch(`${url}/api/portal_link`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
