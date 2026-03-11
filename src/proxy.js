@@ -1,7 +1,7 @@
 // src/proxy.js
 export const generatePortalLink = async (email) => {
     try {
-        const res = await fetch("http://localhost:3000/api/portal_link", {
+        const res = await fetch(`${process.env.REACT_APP_API_URL}/api/portal_link`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -14,7 +14,6 @@ export const generatePortalLink = async (email) => {
         if (!res.ok) throw new Error(data.message || "Failed");
 
         return data.url;
-
     } catch (err) {
         console.error(err);
         throw err;
