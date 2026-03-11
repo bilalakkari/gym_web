@@ -1,0 +1,51 @@
+/* src/App.css */
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: #0070f3;
+}
+
+.submit-btn.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.reset-btn {
+    background-color: #999;
+}
+
+.message {
+    margin-top: 20px;
+    color: #333;
+}
